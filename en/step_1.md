@@ -1,19 +1,24 @@
-## Introduction
+This is a for loop. It runs a fixed number of times based on a counter variable.
 
-Add project description here. What will learners be making?
+```JavaScript
+for(var i=0; i < 5; i++){
+    alert("This is a loop");
+}
+```
 
-### What you will make
+In this example:
+- The counter variable is called `i` and it starts with the value of `0` - this is the part `var i = 0;`
+- The loop will stop when the condition `i < 5` is no longer true - i.e. it will run when `i` equals 0, 1, 2, 3, 4 but not when `i` equals 5.
+- Each time the loop runs, we add one to `i` - this is the part `i++`
+- Any lines of code within the braces `{ }` will be executed each time the loop runs
 
-Add something here to showcase here, for example:
+### Looping through an array
+You can set a loop to run once for each item in an array like this:
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+```JavaScript
+var food = ["Apple", "Banana", "Carrot"];
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
-
-### What you will learn
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+for(var i=0; i < food.length; i++){
+    alert("This is a loop");
+}
+```
